@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3 # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
       - name: Hello world action step
-        uses: ./action.yaml # Uses an action in the root directory
+        uses: ./ # Uses an action in the root directory
         id: hello
         with:
           who-to-greet: 'Pedro Coelho'
